@@ -34,7 +34,9 @@
             Lucas Vital
           </a>
           <div>
-            <a class="link-light me-3 fs-5" href="https://www.linkedin.com/in/lucas-vital-98580518a/"
+            <a
+              class="link-light me-3 fs-5"
+              href="https://www.linkedin.com/in/lucas-vital-98580518a/"
               ><i class="fab fa-linkedin-in"></i
             ></a>
 
@@ -49,33 +51,70 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="meio col d-flex align-items-center justify-content-center">
+          <div
+            class="
+              meio
+              col-md-6
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+          >
             <section class="text-end me-5">
               <h1 class="font-redhat">Teorema de Pitágoras</h1>
               <span class="font-reenie fs-3"></span>
               <h3>_____________________________________</h3>
-              <p class="font-reenie fs-3">Aqui está um pouco do meu desenvolvimento Web.</p>
-             </section>
-             <div>
-               <img class="img-fluid" src="icon/Polygon 1.svg" alt="">
-              
-               <div class="input-group mt-3 ">
-                <input type="" class="bg-transparent form-control" placeholder="Digite o Primeiro Cateto: " aria-label="Example text with button addon" aria-describedby="button-addon1">
-              </div>
-
-               <div class="input-group mt-3 ">
-                <input type="text" class="bg-transparent form-control" placeholder="Digite o Segundo Cateto:" aria-label="Example text with button addon" aria-describedby="button-addon1">
-              </div>
-
+              <p class="font-reenie fs-3">
+                Aqui está um pouco do meu desenvolvimento Web.
+              </p>
+            </section>
+          </div>
+          <div class="col d-flex align-items-center justify-content-center">
+            <form class="mb-2" onsubmit="calcular()">
+              <img class="img-fluid" src="icon/Polygon 1.svg" alt="" />
               <div class="input-group mt-3">
-                <button class="bg-transparent btn btn-outline-light text-light" type="button" id="button-addon1">Calcular</button>
-                <input readonly type="text" class="bg-transparent form-control text-center" placeholder="Hipotenusa" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <input
+                  id="cat1"
+                  name="cat2"
+                  type="number"
+                  class="bg-transparent form-control text-light text-center"
+                  placeholder="Digite o primeiro cateto "
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                  required
+                />
               </div>
-
+              <div class="input-group mt-3">
+                <input
+                  id="cat2"
+                  name="cat2"
+                  type="number"
+                  class="bg-transparent form-control text-light text-center"
+                  placeholder="Digite o segundo cateto"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                  required
+                />
               </div>
-
-            </div>
-
+              <div class="input-group mt-3">
+                <button
+                  class="bg-transparent btn btn-outline-light text-light"
+                  type="submit"
+                  id="button-addon1"
+                >
+                  Calcular
+                </button>
+                <input
+                  id="hypot"
+                  readonly
+                  type="text"
+                  class="bg-transparent form-control text-light text-center"
+                  placeholder="Hipotenusa"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+            </form>
           </div>
         </div>
       </div>
