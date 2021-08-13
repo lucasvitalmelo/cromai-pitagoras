@@ -6,15 +6,27 @@ function App() {
   const [cat2, setCat2] = useState();
   const [hypot, setHypot] = useState();
 
+  console.log(hypot)
+
   function calcular(event) {
     event.preventDefault();
+
+    const cat1pow = Math.pow(cat1, 2) 
+    const cat2pow = Math.pow(cat2, 2) 
+
+    const sum  = cat1pow + cat2pow
+
+    const hypotSqrt = Math.sqrt(sum).toFixed(2)
+
+    setHypot(hypotSqrt)
+
+      
 
     // const hypot = document.getElementById("hypot");
     // const cat1 = document.getElementById("cat1");
     // const cat2 = document.getElementById("cat2");
 
-    // const cat1pow = Math.pow(cat1.value, 2);
-    // const cat2pow = Math.pow(cat2.value, 2);
+    //  const cat2pow = Math.pow(cat2.value, 2);
 
     // const somaCatetos = cat1pow + cat2pow;
 
@@ -28,7 +40,7 @@ function App() {
       <header>
         <nav className="navbar navbar-dark bg-transparent">
           <div className="container">
-            <a className="navbar-brand fs-5 font-oxanium" href="#">
+            <a className="navbar-brand fs-5 font-oxanium" href="https://www.linkedin.com/in/lucas-vital-98580518a/">
               <img
                 src="icon/LVlogo.svg"
                 alt="Logo LV"
@@ -97,6 +109,8 @@ function App() {
                 <div className="input-group mt-3">
                   <input
                     id="cat2"
+                    value={cat2}
+                    onChange={(event)=> setCat2(event.target.value)}
                     name="cat2"
                     type="number"
                     className="bg-transparent form-control text-light text-center"
@@ -116,6 +130,7 @@ function App() {
                   </button>
                   <input
                     id="hypot"
+                    value={hypot}
                     readonly
                     type="text"
                     className="bg-transparent form-control text-light text-center"
