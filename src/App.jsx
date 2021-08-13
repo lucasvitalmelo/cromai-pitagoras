@@ -1,6 +1,28 @@
-import "./App.css"
+import { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [cat1, setCat1] = useState();
+  const [cat2, setCat2] = useState();
+  const [hypot, setHypot] = useState();
+
+  function calcular(event) {
+    event.preventDefault();
+
+    // const hypot = document.getElementById("hypot");
+    // const cat1 = document.getElementById("cat1");
+    // const cat2 = document.getElementById("cat2");
+
+    // const cat1pow = Math.pow(cat1.value, 2);
+    // const cat2pow = Math.pow(cat2.value, 2);
+
+    // const somaCatetos = cat1pow + cat2pow;
+
+    // const hipotenusa = Math.sqrt(somaCatetos);
+
+    // hypot.value = hipotenusa.toFixed(2);
+  }
+
   return (
     <div className="background text-light">
       <header>
@@ -56,11 +78,13 @@ function App() {
               </section>
             </div>
             <div className="col d-flex align-items-center justify-content-center">
-              <form className="mb-2" onsubmit="calcular()">
+              <form className="mb-2" onSubmit={calcular}>
                 <img className="img-fluid" src="icon/Group 4.svg" alt="" />
                 <div className="input-group mt-3">
                   <input
                     id="cat1"
+                    value={cat1}
+                    onChange={(event) => setCat1(event.target.value)}
                     name="cat2"
                     type="number"
                     className="bg-transparent form-control text-light text-center"
