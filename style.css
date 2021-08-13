@@ -45,5 +45,9 @@ span{
   color: #816D88;
   letter-spacing: 1rem ;
   border: 1px solid rgb(189, 189, 189);
-  
+}
+
+#cat1:focus, #cat2:focus, #hypot:focus{
+  box-shadow: 0 0 4px #eee;
+  border-color: #eee;
 }
