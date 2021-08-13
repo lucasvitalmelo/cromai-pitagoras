@@ -1,0 +1,10 @@
+{
+  "name": "cromai-pitagoras",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lucasvitalmelo/cromai-pitagoras.git",
+  "author": "Lucas Vital de Melo <71709874+lucasvitalmelo@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false
+
+}
