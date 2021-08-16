@@ -1,4 +1,6 @@
-import "../App.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
+import "./index.css";
 
 function Navbar() {
   return (
@@ -20,14 +22,15 @@ function Navbar() {
                   className="link-light me-3 fs-5"
                   href="https://www.linkedin.com/in/lucas-vital-98580518a/"
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                   <FontAwesomeIcon icon={faLinkedinIn} />
+
                 </a>
 
                 <a
                   className="link-light fs-5"
                   href="https://github.com/lucasvitalmelo"
                 >
-                  <i className="fab fa-github"></i>
+                  <FontAwesomeIcon icon={faGithub} />
                 </a>
               </div>
             </div>

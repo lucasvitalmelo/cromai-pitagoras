@@ -1,21 +1,21 @@
 import "./App.css";
-import InputTp from "./components/InputTp";
+import Calculate from "./components/Calculate";
 import NameApp from "./components/NameApp";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   
   return (
-    <div className="background text-light">
+    <div className="background text-light d-flex flex-column justify-content-between">
       <Navbar />
-      <main>
-        <div className="container">
-          <div className="row">
-            <NameApp/>
-            <InputTp/>
-          </div>
+      <div className="container">
+        <div className="row">
+          <NameApp/>
+          <Calculate/>
         </div>
-      </main>
+      </div>
+      <Footer/>
     </div>
   );
 }
