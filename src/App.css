@@ -1,0 +1,18 @@
+/* font-family: 'Oxanium', cursive;
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Reenie Beanie', cursive; */
+
+.font-oxanium{
+  font-family: 'Oxanium', cursive;
+}
+
+.background {
+min-height: 100vh;
+background-repeat:  no-repeat;
+
+background: radial-gradient(
+  67.04% 119.18% at 17.43% 21.42%,
+  #350048 0%,
+  #1a0023 64.53%
+);
+}
