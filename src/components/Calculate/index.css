@@ -1,5 +1,6 @@
 .inputCat:focus {
-  box-shadow: 0 0 4px #eee ; 
-  border-color: #eee ;
+  box-shadow: 0 0 4px #eee !important; 
+  border-color: #eee !important; 
+  /* Agora não estava pegando aqui pra mim, tive que usar o important */
   }
   
