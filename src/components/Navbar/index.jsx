@@ -1,6 +1,9 @@
+import "./index.css";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
-import "./index.css";
+
+import LogoLV from "../../assets/LVlogo.svg"
 
 function Navbar() {
   return (
@@ -9,7 +12,7 @@ function Navbar() {
             <div className="container">
               <a className="navbar-brand fs-5 font-oxanium" href="https://www.linkedin.com/in/lucas-vital-98580518a/">
                 <img
-                  src="assets/LVlogo.svg"
+                  src={LogoLV}
                   alt="Logo LV"
                   width="79"
                   height="102"

@@ -2,6 +2,8 @@ import "./index.css";
 import React, { useState } from "react";
 import CustomInput from "../CustomInput";
 
+import hypoImage from "../../assets/Group4.svg"
+
 function Calculate() {
   const [cat1, setCat1] = useState();
   const [cat2, setCat2] = useState();
@@ -23,7 +25,7 @@ function Calculate() {
   return (
     <div className="col d-flex align-items-center justify-content-center">
       <form className="mb-2" onSubmit={calcular}>
-        <img className="img-fluid" src="assets/Group 4.svg" alt="" />
+        <img className="img-fluid" src={hypoImage} alt="" />
         <CustomInput
           value={cat1}
           onChange={(event) => setCat1(event.target.value)}
@@ -34,7 +36,7 @@ function Calculate() {
           onChange={(event) => setCat2(event.target.value)}
           label="Digite o cateto oposto"
         />
-        <CustomInput readOnly value={hypot}  label="Hipotenusa"/>
+        <CustomInput readOnly value={hypot}  label="Hipotenusa" isButton/>
       </form>
     </div>
   );
