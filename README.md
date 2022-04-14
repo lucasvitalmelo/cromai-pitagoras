@@ -17,4 +17,4 @@ O projeto foi um desafio que recebi quando estava participando de um processo se
 
 -   **[React](https://pt-br.reactjs.org/)**
 -   **[Bootstrap](https://getbootstrap.com/)**
--   **[Fort Awesome](https://fortawesome.com/)**
+-   **[Font Awesome](https://fontawesome.com/)**
